@@ -1,0 +1,97 @@
+<!DOCTYPE PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Z-blog</title>
+<link rel="stylesheet" href="myblog.css" type="text/css" />
+<link rel="stylesheet" href="reset.css" type="text/css" />
+</head>
+
+<body>
+<header>
+	<nav>
+    	<div class="logo_menu" id="menu"><a href="#banner">Z-blog</a></div>
+        <ul class="ul_menu">
+        	<li><a href="#banner">首页</a></li>
+            <li><a href="#catalog">应聘职位</a></li>
+            <li><a href="#dat">个人资料</a></li>
+           	<li><div id="callme" class="callme">联系我</div></li>
+        </ul>	
+    </nav>
+     
+     <!--  首页菜单栏，用于导航博客的一些主题位置，开头的div为博客图标，剩下的无序列表则是4个主要的导航标签    -->
+     <div id="banner"><!--位于菜单栏下方的首页海报-->
+     	<div class="inner">
+        	<div id="me" class="me"><img src="me.jpg" />扫描二维码</div>
+     		<h1>Z-blog</h1>
+            <div class="blank1"></div>
+     		<p>与其临渊羡鱼，不如退而结网</p>
+            <div class="blank1"></div>
+            <button id="button" onclick="onTopClick()">了解我</button>
+            <div class="more">更多</div>
+            <div class="figger1"></div>
+            <div class="figger2"></div>
+      	</div>
+     </div>
+</header>
+<div class="content" tabindex='0'><!-- 主题正文部分-->
+	<section class="catalog" id="catalog"><!--目录-->
+		<div class="Search_catalog">
+        	<h2>我的职业追求是</h2>
+            <p>前端工程师</p>
+            <h2>为什么呢？</h2>
+            <p>因为我觉得前端是一种类似于从事艺术的工作，它可以靠着编程语言去完成一个网页的布局，着色，动画等等来实现很多你脑海中对于一个网页的幻想，是一种很快乐的体验</p>
+        </div>
+        <div class="search_logo">
+        	<div class="circle" id="one_one" ><button class="fanzhuan" id="one">个人</button></div>
+        	<div class="circle" id="two_two"><button class="fanzhuan" id="two">专业</button></div>
+        	<div class="circle" id="three_three"><button class="fanzhuan" id="three">爱好</button></div>
+       		<div class="circle" id="four_four"><button class="fanzhuan" id="four">项目</button></div>
+        </div>
+	</section>
+	<section class="data">
+		<div class="one_data" id="dat">
+        	<div class="one_img"><img src="data1.jpg" class="xs_img" /></div>
+            <div class="one_text" id="geren"><h2>生于1996.7.28</h2>
+            <p><b>姓名</b>：朱宇哲 <b>身高：</b>182 <b>性别：</b>男 <b>年龄：</b>23岁<br />
+            浙江宁波象山人 </p>
+            
+            </div>
+        </div>
+        <div class="one_data">
+        	<div class="one_text" id="zhuanye"><h2>毕业于浙江万里学院</h2>
+            	<p><b>专业：</b>电子信息工程 <b>毕业时间：</b>2018.6<br />
+                <b>主修课程：</b>单片机原理及应用 数字电子技术及实践  传感器与检测技术 面向对象程序设计<br />
+                 程序设计方法学 C语言程序设计 模拟电子技术及实践 嵌入式Linux开发基础 javase<br />
+                <b>专业技能：</b>javase（熟练）Html5+css3（熟练）Javascript（熟练）
+				单片机应用（熟练）<br />c语言（熟练）jQuery（熟悉）Dreamweaver（熟悉）ajax（一般）bootstrap（一般）</p>
+            </div>
+        	<div class="one_img"><img src="data2.jpg" class="xs_img" /></div>
+        </div>
+        <div class="one_data">
+        	<div class="one_img"><img src="data3.jpg" class="xs_img" /></div>
+            <div class="one_text" id="aihao"><h2>兴趣爱好广泛</h2>
+            <p>
+            	<b>在生活上：</b>喜欢锻炼身体，热爱美食，喜欢看历史，喜欢打电子游戏（绝地求生，英雄联盟，王者荣耀）<br />
+                <b>在学习上：</b>对待问题喜欢深入了解，喜欢平时上慕课网上看看别的人跟着一起做一些感兴趣的东西
+                
+            </p></div>
+        </div>
+        <div class="one_data">
+        	<div class="one_text" id="xiangmu"><h2>项目经验</h2>
+            <p><b>项目一：</b>本网页<br />
+            <b>项目二：</b>在电子综合设计课程中，完成了智能家居监测系统，利用多个stc89C52单片机实现了传感器的监测功能，比如温湿度传感器，烟雾传感器，红外传感器等。通过esp8266无线wifi模块与上位机连接，上位机是由PC端的java swing编写，同时利用网页制作了显示界面，通过tcp协议，以路由器为服务器，将单片机的客户端与PC端上位机客户端进行数据交换，来显示各种数据情况，并且可以通过上位机界面对单片机端进行一些控制，如灯光，门锁，并将获取的数据保存在文件中，网页通过文件读取，并且实时将数据显示在网页上。<br />
+            <b>项目三：</b>参加了院系的智能小车比赛，使用树莓派和arduino编写基于linux智能小车，通过无线模块实现使用手机进行控制功能，利用红外传感器实现了避障功能，利用小型摄像头以及无线传输模块实现了远程拍摄功能。
+            </p>
+            </div>
+        	<div class="one_img"><img src="data4.jpg" class="xs_img" /></div>
+
+        </div>
+	</section>
+    <button id="return" onclick="onbtmClick()" >返回顶部</button>
+</div>
+
+<footer><div class="foot"><p>&copy Z-blog<br />邮箱：839107089@qq.com<p>	</div></footer>
+<script src="main.js"></script>
+</body>
+</html>
